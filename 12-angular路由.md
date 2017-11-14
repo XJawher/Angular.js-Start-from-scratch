@@ -1,0 +1,2 @@
+在 angularJS 也就是 angular1.x 版本中,常用的路由是 ngRoute 和 ui.route,无论是 ngRoute 还是 ui.route 他们都作为框架外的额外附加功能都是要通过模块依赖的方式被引入,两者的区别是 ngRoute 是自带的路由模块,而 ui.route 是模块开发的第三方模块,两者的区别是 ui.route  是基于 state 的既基于状态的,而ngRoute 是基于 URL 的.ui.route 有更加强大的功能,主要体现在视图的嵌套方面.    
+**# 使用 ui.route 可以定义有明确父子关系的路由,并通过 ui-view 指令将子路由模板插入到父路由模板的 <div ui-view></div> 中去,从而实现了路由嵌套.而 ngroute 中不能这样定义,否则会陷入死循环 #**
